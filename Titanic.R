@@ -1,10 +1,12 @@
 #This is the Titanic Kaggle Competition Script for USU Data Analytics 2017
 
-# Import the data
-train = read.csv("~/USU Data Analytics/Titanic2017/train.csv")
-test = read.csv("~/USU Data Analytics/Titanic2017/test.csv")
+getwd()
 
-# Create a copy of the training set to explore
+# Import the data
+train = read.csv("~/Titanic2017/train.csv")
+test = read.csv("~/Titanic2017/test.csv")
+
+# Exploratory data analysis
 head(train)
 tail(train)
 names(train)
@@ -12,7 +14,6 @@ names(test)
 View(train)
 View(test)
 
-# Exploratory data analysis
 class(train) #data frame
 summary(train)
 
